@@ -101,6 +101,7 @@ main h1{
     color: #3C8031;
     text-shadow: 3px 3px 3px #72ed5cb6;
 font-weight: lighter;
+text-align: center;
 }
 main h2{
 font-family: var(--fontde2);
