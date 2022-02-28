@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Tourney';
+    src: url('fonte/Tourney-Regular.otf')
+    format('opentype');
+    
+}
+@font-face{
+    font-family: 'Football';
+    src: url('fonte/Football\ Attack\ Demo.ttf')
+    format('truetype');
+
+}
+@font-face{
+    font-family: 'esporte';
+src: url('fonte/Esporte.otf') format('opentype');
+}
+@font-face{
+    font-family: 'assinatura';
+    src: url('fonte/Photograph\ Signature.ttf')
+    format('truetype');
+}
+:root{
+    --cor01: #B1F0A6;
+    --cor02: #72ED5C;
+    --cor03:#5ABA49;
+    --cor04:#3C8031;
+    --cor05:#167008;
+
+    --fontpadrao: Arial, Helvetica, sans-serif;
+    --fontde1: 'Tourney';
+    --fontde2: 'Football';
+    --fontde3: 'esporte';
+    --fontde4: 'assinatura';
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #B1F0A6;
+}
+
+header{
+    margin-top: -30px;
+    
+    text-align: center;
+    background-image: linear-gradient(to bottom, #167008, #5ABA49);
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 3px black;
+}
+header h1{
+    font-family: var(--fontde1);
+    font-size: 2em;
+    color: #72ED5C;
+    padding-top: 50px;
+    font-weight: lighter;
+    
+}
+header p{
+font-family: var(--fontpadrao);
+font-size: 1.2em;
+color: white;
+padding: 20px 10px 0px 10px;
+
+}
+nav{
+    background-color: #5ABA49;
+    
+}
+nav a{
+    color: #B1F0A6;
+    font-family: var(--fontpadrao);
+    font-size: 1.1em;
+    padding: 10px 10px 0px 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #B1F0A6 ;
+    color: #5ABA49;
+    border-radius: 8px;
+}
+main{
+    
+    background-color: white;
+   min-width: 300px;
+   max-width: 1000px;
+   margin: auto;
+   padding: 20px;
+   font-size: 1.4em;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
+   border-bottom-left-radius: 8px ;
+   border-bottom-right-radius: 8px ; 
+   text-align: justify;
+   text-indent: 20px;
+   font-family: var(--fontpadrao);
+   
+}
+main h1{
+    font-family: var(--fontde3);
+    font-size: 1.5em;
+    color: #3C8031;
+    text-shadow: 3px 3px 3px #72ed5cb6;
+font-weight: lighter;
+}
+main h2{
+font-family: var(--fontde2);
+font-size: 25px;
+background-image: linear-gradient(to left, var(--cor01), var(--cor02));
+color: #2a5a23;
+box-shadow: 1px 2px 2px #167008;
+text-align: center;
+
+
+
+
+}
+main p {
+    line-height: 40px;
+    color: #12300d;
+    font-size: 16px;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2a5a23;
+    
+}
+a.externo::after{
+    content:  '\00A0\1F517';
+}
+main a:hover{
+text-decoration: underline;
+color: #5ABA49;
+}
+main img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 300px;
+}
+main img.pequena{
+    width: 200px;
+    height: 200px;
+}
+
+div.video{
+background-color: #2a5a23;
+margin: 0px -20px 0px -20px;
+padding: 20px;
+position: relative;
+padding-bottom: 50%;
+}
+div.video > iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+
+}
+aside{
+    background-color: #5ABA49;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+aside h3{
+    color: white;
+    background-color: #167008;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0px 5px 0px;
+    font-size: 16px;
+    font-family: var(--fontpadrao);
+}
+aside p{
+    color: #12300d;
+
+
+}
+aside ul{
+    list-style: '\26BD\00A0';
+    columns: 2;
+    font-size: 16px;
+}
+footer{
+   text-align: center;
+    height: 30px;
+    font-style: italic;
+    padding-left: 20px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+   
+}
+
+
